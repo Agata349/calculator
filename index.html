@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a03ed8f447.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+        <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+    <form id="myform" Name="calc">
+        <textarea name="display" rows="2" cols="21"></textarea><br/>
+        <input type="button" value="C" id="double" Onclick="calc.display.value=''">
+        <input type="button" value="CE" Onclick="calc.display.value = display.value.slice(0, -1);">
+        <input type="button" value="+" Onclick="calc.display.value+='+'"><br />
+        <input type="button" value="7" Onclick="calc.display.value+='7'">
+        <input type="button" value="8" Onclick="calc.display.value+='8'">
+        <input type="button" value="9" Onclick="calc.display.value+='9'">
+        <input type="button" value="-" Onclick="calc.display.value+='-'"><br />
+        <input type="button" value="4" Onclick="calc.display.value+='4'">
+        <input type="button" value="5" Onclick="calc.display.value+='5'">
+        <input type="button" value="6" Onclick="calc.display.value+='6'">
+        <input type="button" value="x" Onclick="calc.display.value+='*'"><br />
+        <input type="button" value="1" Onclick="calc.display.value+='1'">
+        <input type="button" value="2" Onclick="calc.display.value+='2'">
+        <input type="button" value="3" Onclick="calc.display.value+='3'">
+        <input type="button" value="&#247;" Onclick="calc.display.value+='/'"><br/>
+        <input type="button" value="." Onclick="calc.display.value+='.'">
+        <input type="button" value="0" Onclick="calc.display.value+='0'">
+        <input type="button" value="=" id="double" Onclick="calc.display.value=eval(calc.display.value)"><br />
+    </form>
+    </div>
+</body>
+<footer>
+    Coded by Agata Piekarczyk | <i class="fab fa-github"></i> <a href="https://github.com/Agata349" target="_blank">Open-source code</a>
+</footer>
+</html>
