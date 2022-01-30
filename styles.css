@@ -17,9 +17,10 @@ body {
 
 textarea[name="display"] {
   width: 299px;
-  min-height: 70px;
+  min-height: 60px;
   max-height: auto;
   margin: 4px;
+  padding: 10px;
   border: none;
   border-radius: 4px;
 }
